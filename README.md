@@ -1,0 +1,2 @@
+# gmailFowardtoLINE
+Gmailから未読のメールを検索してLINEに転送する。メールに添付ファイルがあればGogoleドライブに保存し、共有URLをLINEに送る
