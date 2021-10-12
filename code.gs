@@ -27,8 +27,6 @@ function gmailFowardtoLINE(){
           for(const gdriveFile of gdriveFiles){
             sendMsg  += String(gdriveFile['fileName']) +" \n";
             sendMsg  += String(gdriveFile['fileUlr']) + "\n";
-            // sendLineMessage(String(gdriveFile['fileName']));
-            // sendLineMessage(String(gdriveFile['fileUlr']));
           }
         }
         if(sendLineMessage(sendMsg)){ //メッセージを送信して
@@ -38,7 +36,7 @@ function gmailFowardtoLINE(){
   }
 }
  
- function saveAttachments(attachments,date){
+function saveAttachments(attachments,date){
   if(!attachments.length) return false;
   const folder = DriveApp.getFolderById(FOLDER_ID);//親フォルダ
   let subFolder =''
